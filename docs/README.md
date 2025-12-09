@@ -1,6 +1,6 @@
-# maeum.io Website
+# MAEUM.io Website
 
-GitHub Pages로 배포되는 maeum.io 공식 웹사이트입니다.
+GitHub Pages로 배포되는 MAEUM.io 공식 웹사이트입니다.
 
 - 메인: `https://maeum.io/`
 - Edge AI: `https://maeum.io/edge-ai/`
