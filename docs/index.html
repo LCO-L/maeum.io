@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>maeum.io | AI Ecosystems</title>
+  <meta name="description" content="maeum.io provides complete AI ecosystems for Edge, SaaS, Browser, Mobile, and Core SDK.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <style>
+    .ecosystems-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+      gap: 24px;
+      margin-top: 48px;
+    }
+
+    .ecosystem-card {
+      padding: 40px 32px;
+      background: var(--color-bg-card);
+      border: 1px solid var(--color-border);
+      border-radius: 20px;
+      transition: all 0.3s ease;
+      text-decoration: none;
+      display: block;
+    }
+
+    .ecosystem-card:hover {
+      transform: translateY(-8px);
+      box-shadow: 0 24px 48px rgba(0, 0, 0, 0.4);
+    }
+
+    .ecosystem-card.edge:hover { border-color: var(--color-edge); }
+    .ecosystem-card.saas:hover { border-color: var(--color-saas); }
+    .ecosystem-card.browser:hover { border-color: var(--color-browser); }
+    .ecosystem-card.mobile:hover { border-color: var(--color-mobile); }
+    .ecosystem-card.core:hover { border-color: var(--color-core); }
+
+    .ecosystem-icon {
+      width: 64px;
+      height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border-radius: 16px;
+      margin-bottom: 24px;
+      font-size: 2rem;
+    }
+
+    .ecosystem-card.edge .ecosystem-icon { background: rgba(0, 212, 170, 0.15); }
+    .ecosystem-card.saas .ecosystem-icon { background: rgba(99, 102, 241, 0.15); }
+    .ecosystem-card.browser .ecosystem-icon { background: rgba(245, 158, 11, 0.15); }
+    .ecosystem-card.mobile .ecosystem-icon { background: rgba(236, 72, 153, 0.15); }
+    .ecosystem-card.core .ecosystem-icon { background: rgba(59, 130, 246, 0.15); }
+
+    .ecosystem-title {
+      font-size: 1.5rem;
+      font-weight: 700;
+      margin-bottom: 12px;
+      color: var(--color-text);
+    }
+
+    .ecosystem-subtitle {
+      font-size: 1rem;
+      margin-bottom: 16px;
+    }
+
+    .ecosystem-card.edge .ecosystem-subtitle { color: var(--color-edge); }
+    .ecosystem-card.saas .ecosystem-subtitle { color: var(--color-saas); }
+    .ecosystem-card.browser .ecosystem-subtitle { color: var(--color-browser); }
+    .ecosystem-card.mobile .ecosystem-subtitle { color: var(--color-mobile); }
+    .ecosystem-card.core .ecosystem-subtitle { color: var(--color-core); }
+
+    .ecosystem-description {
+      color: var(--color-text-secondary);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 24px;
+    }
+
+    .ecosystem-link {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.9rem;
+      font-weight: 500;
+      color: var(--color-text-secondary);
+      transition: color 0.2s ease;
+    }
+
+    .ecosystem-card:hover .ecosystem-link { color: var(--color-text); }
+
+    .home-hero {
+      min-height: 60vh;
+      padding-top: 140px;
+    }
+
+    .home-hero .hero-title {
+      font-size: clamp(2.5rem, 5vw, 4rem);
+    }
+
+    .main-logo {
+      font-size: 1rem;
+      opacity: 0.6;
+      margin-bottom: 16px;
+      letter-spacing: 0.2em;
+      text-transform: uppercase;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="./" class="nav-logo">maeum<span>.io</span></a>
+      <div class="lang-toggle">
+        <button class="lang-btn" data-lang-btn="ko">KO</button>
+        <button class="lang-btn active" data-lang-btn="en">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero home-hero">
+    <div class="hero-content">
+      <p class="main-logo">maeum.io</p>
+
+      <h1 class="hero-title">
+        <span data-lang="ko">AI 생태계의 모든 것</span>
+        <span data-lang="en">Complete AI Ecosystems</span>
+      </h1>
+
+      <p class="hero-description" data-lang="ko">
+        엣지에서 클라우드까지, 브라우저에서 모바일까지.<br>
+        maeum.io는 다양한 환경에서 AI를 실행하고 운영하기 위한 통합 솔루션을 제공합니다.
+      </p>
+      <p class="hero-description" data-lang="en">
+        From edge to cloud, from browser to mobile.<br>
+        maeum.io provides integrated solutions for running and operating AI across diverse environments.
+      </p>
+    </div>
+  </section>
+
+  <!-- Ecosystems Grid -->
+  <section class="section">
+    <div class="container">
+      <div class="ecosystems-grid">
+
+        <a href="edge-ai/" class="ecosystem-card edge">
+          <div class="ecosystem-icon">⚡</div>
+          <h2 class="ecosystem-title">Edge AI</h2>
+          <p class="ecosystem-subtitle" data-lang="ko">현장에서 즉시 판단하는 실시간 지능</p>
+          <p class="ecosystem-subtitle" data-lang="en">Real-Time Intelligence at the Point of Action</p>
+          <p class="ecosystem-description" data-lang="ko">
+            지연, 안정성, 프라이버시가 중요한 환경을 위한 온디바이스 AI 실행 계층
+          </p>
+          <p class="ecosystem-description" data-lang="en">
+            On-device AI execution for environments where latency, reliability, and privacy are critical
+          </p>
+          <span class="ecosystem-link">
+            <span data-lang="ko">자세히 보기</span>
+            <span data-lang="en">Learn More</span>
+            →
+          </span>
+        </a>
+
+        <a href="saas/" class="ecosystem-card saas">
+          <div class="ecosystem-icon">🏢</div>
+          <h2 class="ecosystem-title">SaaS</h2>
+          <p class="ecosystem-subtitle" data-lang="ko">AI 운영을 위한 중앙 허브</p>
+          <p class="ecosystem-subtitle" data-lang="en">The Operational Hub for AI Workflows</p>
+          <p class="ecosystem-description" data-lang="ko">
+            팀이 AI 프로젝트를 개발하고 운영하는 과정 전반을 관리하는 운영 레이어
+          </p>
+          <p class="ecosystem-description" data-lang="en">
+            Centralized environment for teams to develop and operate AI systems
+          </p>
+          <span class="ecosystem-link">
+            <span data-lang="ko">자세히 보기</span>
+            <span data-lang="en">Learn More</span>
+            →
+          </span>
+        </a>
+
+        <a href="browser-ai/" class="ecosystem-card browser">
+          <div class="ecosystem-icon">🌐</div>
+          <h2 class="ecosystem-title">Browser AI</h2>
+          <p class="ecosystem-subtitle" data-lang="ko">브라우저에서 바로 실행되는 온디바이스 AI</p>
+          <p class="ecosystem-subtitle" data-lang="en">AI Executed Directly in the Browser</p>
+          <p class="ecosystem-description" data-lang="ko">
+            설치 없이 브라우저에서 즉시 실행되는 WebGPU·WebAssembly 기반 AI 경험
+          </p>
+          <p class="ecosystem-description" data-lang="en">
+            WebGPU and WebAssembly-powered AI running instantly without installation
+          </p>
+          <span class="ecosystem-link">
+            <span data-lang="ko">자세히 보기</span>
+            <span data-lang="en">Learn More</span>
+            →
+          </span>
+        </a>
+
+        <a href="mobile-ai/" class="ecosystem-card mobile">
+          <div class="ecosystem-icon">📱</div>
+          <h2 class="ecosystem-title">Mobile & App</h2>
+          <p class="ecosystem-subtitle" data-lang="ko">모바일 앱 내부에 녹아드는 지능</p>
+          <p class="ecosystem-subtitle" data-lang="en">Intelligence Embedded Inside Every Application</p>
+          <p class="ecosystem-description" data-lang="ko">
+            iOS·Android 앱에 온디바이스 및 서버 기반 지능을 통합하는 확장 레이어
+          </p>
+          <p class="ecosystem-description" data-lang="en">
+            On-device and server-assisted intelligence for iOS and Android applications
+          </p>
+          <span class="ecosystem-link">
+            <span data-lang="ko">자세히 보기</span>
+            <span data-lang="en">Learn More</span>
+            →
+          </span>
+        </a>
+
+        <a href="core-sdk/" class="ecosystem-card core">
+          <div class="ecosystem-icon">🧩</div>
+          <h2 class="ecosystem-title">Core SDK</h2>
+          <p class="ecosystem-subtitle" data-lang="ko">지능형 앱을 위한 모듈 기반 기초 계층</p>
+          <p class="ecosystem-subtitle" data-lang="en">A Modular Foundation for Intelligent Applications</p>
+          <p class="ecosystem-description" data-lang="ko">
+            LLM, Vision, Audio, Agent 기능을 모듈화해 제공하는 일관된 개발 경험
+          </p>
+          <p class="ecosystem-description" data-lang="en">
+            Modular capabilities for LLM, Vision, Audio, and Agent with consistent patterns
+          </p>
+          <span class="ecosystem-link">
+            <span data-lang="ko">자세히 보기</span>
+            <span data-lang="en">Learn More</span>
+            →
+          </span>
+        </a>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">maeum.io</div>
+      <p class="footer-text">&copy; 2024 maeum.io. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

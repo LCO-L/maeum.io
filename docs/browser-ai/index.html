@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Browser On-Device Ecosystem | maeum.io</title>
+  <meta name="description" content="AI executed directly in the browser with WebGPU and WebAssembly. No installation required.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="../css/style.css">
+</head>
+<body class="theme-browser">
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="nav-container">
+      <a href="../" class="nav-logo">maeum<span>.io</span></a>
+      <div class="lang-toggle">
+        <button class="lang-btn" data-lang-btn="ko">KO</button>
+        <button class="lang-btn active" data-lang-btn="en">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="hero-badge">
+        <span class="hero-badge-dot"></span>
+        <span data-lang="ko">브라우저 AI</span>
+        <span data-lang="en">Browser AI</span>
+      </div>
+
+      <h1 class="hero-title">
+        <span data-lang="ko">Browser On-Device Ecosystem</span>
+        <span data-lang="en">Browser On-Device Ecosystem</span>
+        <br>
+        <span class="hero-title-accent" data-lang="ko">브라우저에서 바로 실행되는 온디바이스 AI</span>
+        <span class="hero-title-accent" data-lang="en">AI Executed Directly in the Browser</span>
+      </h1>
+
+      <p class="hero-description" data-lang="ko">
+        Browser 생태계는 설치 없이 브라우저에서 즉시 실행되는 온디바이스 AI 경험을 제공합니다.
+        WebGPU·WebAssembly 기반으로 개인 데이터는 로컬에서 처리됩니다.
+      </p>
+      <p class="hero-description" data-lang="en">
+        The Browser ecosystem enables AI to run instantly without installation, accounts, or system setup.
+        Powered by WebGPU and WebAssembly, it processes data locally for privacy-first operation.
+      </p>
+
+      <div class="hero-cta">
+        <a href="#how-it-works" class="btn btn-primary">
+          <span data-lang="ko">작동 방식</span>
+          <span data-lang="en">How It Works</span>
+        </a>
+        <a href="#contact" class="btn btn-secondary">
+          <span data-lang="ko">체험하기</span>
+          <span data-lang="en">Try Demo</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- How It Works Section -->
+  <section id="how-it-works" class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">How It Works</span>
+        <h2 class="section-title" data-lang="ko">작동 방식</h2>
+        <h2 class="section-title" data-lang="en">How It Works</h2>
+        <p class="section-description" data-lang="ko">
+          최신 웹 기술을 활용한 고성능 브라우저 내 AI 실행
+        </p>
+        <p class="section-description" data-lang="en">
+          High-performance in-browser AI execution using modern web technologies
+        </p>
+      </div>
+
+      <div class="features-grid">
+        <div class="feature-card">
+          <div class="feature-icon">🚀</div>
+          <h3 class="feature-title" data-lang="ko">로컬 우선 AI 실행</h3>
+          <h3 class="feature-title" data-lang="en">Local-first AI Execution</h3>
+          <p class="feature-description" data-lang="ko">
+            모든 AI 연산이 사용자의 브라우저 내에서 실행됩니다. 서버로 데이터를 전송할 필요가 없습니다.
+          </p>
+          <p class="feature-description" data-lang="en">
+            All AI computations run within the user's browser. No need to send data to servers.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">⚡</div>
+          <h3 class="feature-title" data-lang="ko">WebGPU 가속</h3>
+          <h3 class="feature-title" data-lang="en">WebGPU Acceleration</h3>
+          <p class="feature-description" data-lang="ko">
+            GPU 가속을 통해 복잡한 AI 모델도 브라우저에서 빠르게 실행할 수 있습니다.
+          </p>
+          <p class="feature-description" data-lang="en">
+            GPU acceleration enables fast execution of complex AI models directly in the browser.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">📦</div>
+          <h3 class="feature-title" data-lang="ko">WebAssembly 런타임</h3>
+          <h3 class="feature-title" data-lang="en">WebAssembly Runtime</h3>
+          <p class="feature-description" data-lang="ko">
+            네이티브에 가까운 성능으로 AI 모델을 실행하는 경량 런타임을 제공합니다.
+          </p>
+          <p class="feature-description" data-lang="en">
+            Lightweight runtime that executes AI models with near-native performance.
+          </p>
+        </div>
+
+        <div class="feature-card">
+          <div class="feature-icon">🌐</div>
+          <h3 class="feature-title" data-lang="ko">오프라인 지원</h3>
+          <h3 class="feature-title" data-lang="en">Offline Support</h3>
+          <p class="feature-description" data-lang="ko">
+            초기 로딩 후에는 인터넷 연결 없이도 완전히 동작합니다.
+          </p>
+          <p class="feature-description" data-lang="en">
+            Works completely offline after initial loading.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Privacy & Performance Section -->
+  <section class="section" style="background: var(--color-bg-secondary);">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Privacy & Performance</span>
+        <h2 class="section-title" data-lang="ko">프라이버시와 성능</h2>
+        <h2 class="section-title" data-lang="en">Privacy and Performance</h2>
+      </div>
+
+      <div class="use-cases">
+        <div class="use-case-item">
+          <div class="use-case-icon">🔐</div>
+          <div class="use-case-content">
+            <h4 data-lang="ko">제로 데이터 전송</h4>
+            <h4 data-lang="en">Zero Data Transfer</h4>
+            <p data-lang="ko">사용자 데이터가 서버로 전송되지 않아 완벽한 프라이버시 보장</p>
+            <p data-lang="en">User data never leaves the browser, ensuring complete privacy</p>
+          </div>
+        </div>
+
+        <div class="use-case-item">
+          <div class="use-case-icon">⏱️</div>
+          <div class="use-case-content">
+            <h4 data-lang="ko">즉각적인 응답</h4>
+            <h4 data-lang="en">Instant Response</h4>
+            <p data-lang="ko">네트워크 지연 없이 로컬에서 즉시 결과 반환</p>
+            <p data-lang="en">Immediate results without network latency</p>
+          </div>
+        </div>
+
+        <div class="use-case-item">
+          <div class="use-case-icon">🏢</div>
+          <div class="use-case-content">
+            <h4 data-lang="ko">사내 환경 최적</h4>
+            <h4 data-lang="en">Enterprise Ready</h4>
+            <p data-lang="ko">폐쇄망 환경에서도 완벽하게 동작하는 AI 솔루션</p>
+            <p data-lang="en">AI solution that works perfectly in air-gapped environments</p>
+          </div>
+        </div>
+
+        <div class="use-case-item">
+          <div class="use-case-icon">💰</div>
+          <div class="use-case-content">
+            <h4 data-lang="ko">서버 비용 제로</h4>
+            <h4 data-lang="en">Zero Server Costs</h4>
+            <p data-lang="ko">AI 추론이 클라이언트에서 실행되어 서버 비용 절감</p>
+            <p data-lang="en">AI inference runs on client, eliminating server costs</p>
+          </div>
+        </div>
+
+        <div class="use-case-item">
+          <div class="use-case-icon">📱</div>
+          <div class="use-case-content">
+            <h4 data-lang="ko">크로스 플랫폼</h4>
+            <h4 data-lang="en">Cross-platform</h4>
+            <p data-lang="ko">모든 모던 브라우저에서 동일하게 동작</p>
+            <p data-lang="en">Works identically across all modern browsers</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Example Integrations Section -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <span class="section-label">Integrations</span>
+        <h2 class="section-title" data-lang="ko">활용 사례</h2>
+        <h2 class="section-title" data-lang="en">Example Integrations</h2>
+      </div>
+
+      <div class="scenarios-list">
+        <div class="scenario-item">
+          <span class="scenario-number">01</span>
+          <div class="scenario-content">
+            <h4 data-lang="ko">교육 플랫폼</h4>
+            <h4 data-lang="en">Education Platforms</h4>
+            <p data-lang="ko">학생들이 개인정보 걱정 없이 AI 튜터링을 받을 수 있는 학습 환경을 구축합니다.</p>
+            <p data-lang="en">Build learning environments where students can receive AI tutoring without privacy concerns.</p>
+          </div>
+        </div>
+
+        <div class="scenario-item">
+          <span class="scenario-number">02</span>
+          <div class="scenario-content">
+            <h4 data-lang="ko">사내 업무 도구</h4>
+            <h4 data-lang="en">Internal Business Tools</h4>
+            <p data-lang="ko">기업 내부 데이터를 외부로 노출하지 않고 AI 기능을 사내 도구에 통합합니다.</p>
+            <p data-lang="en">Integrate AI features into internal tools without exposing corporate data externally.</p>
+          </div>
+        </div>
+
+        <div class="scenario-item">
+          <span class="scenario-number">03</span>
+          <div class="scenario-content">
+            <h4 data-lang="ko">웹 UI 내 에이전트</h4>
+            <h4 data-lang="en">Agents in Web UI</h4>
+            <p data-lang="ko">기존 웹 애플리케이션에 AI 에이전트를 삽입하여 사용자 경험을 향상시킵니다.</p>
+            <p data-lang="en">Embed AI agents into existing web applications to enhance user experience.</p>
+          </div>
+        </div>
+
+        <div class="scenario-item">
+          <span class="scenario-number">04</span>
+          <div class="scenario-content">
+            <h4 data-lang="ko">업무 자동화</h4>
+            <h4 data-lang="en">Workflow Automation</h4>
+            <p data-lang="ko">반복적인 웹 기반 작업을 AI가 자동으로 처리하여 생산성을 높입니다.</p>
+            <p data-lang="en">AI automatically handles repetitive web-based tasks to boost productivity.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA Section -->
+  <section id="contact" class="cta-section">
+    <div class="cta-content">
+      <h2 class="cta-title" data-lang="ko">브라우저에서 AI를 시작하세요</h2>
+      <h2 class="cta-title" data-lang="en">Start AI in Your Browser</h2>
+      <p class="cta-description" data-lang="ko">
+        설치 없이, 서버 없이, 지금 바로 체험해 보세요.
+      </p>
+      <p class="cta-description" data-lang="en">
+        No installation, no server required. Try it now.
+      </p>
+      <a href="mailto:contact@maeum.io" class="btn btn-primary">
+        <span data-lang="ko">데모 요청</span>
+        <span data-lang="en">Request Demo</span>
+      </a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">maeum.io</div>
+      <p class="footer-text">&copy; 2024 maeum.io. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <script src="../js/main.js"></script>
+</body>
+</html>
